@@ -32,12 +32,8 @@
             <input type="text" id="text-box" name="kapasite" required>
           </div>
           <div class="row">
-            <span class="lbl">Dizi Batarya Sayısı</span>
+            <span class="lbl">Batarya Sayısı</span>
             <input type="text" id="text-box" name="dizi" required>
-          </div>
-          <div class="row">
-            <span class="lbl">Dizi Sayısı</span>
-            <input type="text" id="text-box" name="sayi" required>
           </div>
           <div class="row">
             <span class="lbl">Batarya Voltajı (V)</span>
