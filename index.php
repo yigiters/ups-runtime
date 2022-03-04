@@ -36,6 +36,10 @@
             <input type="text" id="text-box" name="sayi" required>
           </div>
           <div class="row">
+            <span class="lbl">Dizi Sayısı</span>
+            <input type="text" id="text-box" name="dizi" required>
+          </div>
+          <div class="row">
             <span class="lbl">Batarya Voltajı (V)</span>
             <input type="text" id="text-box" name="voltaj" required>
           </div>
