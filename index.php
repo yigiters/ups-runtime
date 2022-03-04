@@ -1,3 +1,4 @@
+<?php require 'calculate.php'; ?>
 <!doctype html>
 <html lang="tr">
   <head>
@@ -21,33 +22,48 @@
         <form id="my-form" method="post">
           <div class="row">
             <span class="lbl" style="margin-top: 5%;">Toplam Yük (W)</span>
-            <input type="text" id="text-box" name="yük" required>
+            <input type="text" id="text-box" name="yük" value="<?php if (isset($_POST['submit'])) {
+              echo $yük;
+            } ?>" required>
           </div>
           <div class="row">
             <span class="lbl">Verim (%)</span>
-            <input type="text" id="text-box" name="verim" required>
+            <input type="text" id="text-box" name="verim" value="<?php if (isset($_POST['submit'])) {
+              echo $verim;
+            } ?>" required>
           </div>
           <div class="row">
             <span class="lbl">Batarya Kapasitesi (Ah)</span>
-            <input type="text" id="text-box" name="kapasite" required>
+            <input type="text" id="text-box" name="kapasite" value="<?php if (isset($_POST['submit'])) {
+              echo $kapasite;
+            } ?>" required>
           </div>
           <div class="row">
             <span class="lbl">Batarya Sayısı</span>
-            <input type="text" id="text-box" name="sayi" required>
+            <input type="text" id="text-box" name="sayi" value="<?php if (isset($_POST['submit'])) {
+              echo $sayi;
+            } ?>" required>
           </div>
           <div class="row">
             <span class="lbl">Dizi Sayısı</span>
-            <input type="text" id="text-box" name="dizi" required>
+            <input type="text" id="text-box" name="dizi" value="<?php if (isset($_POST['submit'])) {
+              echo $dizi;
+            } ?>" required>
           </div>
           <div class="row">
             <span class="lbl">Batarya Voltajı (V)</span>
-            <input type="text" id="text-box" name="voltaj" required>
+            <input type="text" id="text-box" name="voltaj" value="<?php if (isset($_POST['submit'])) {
+              echo $voltaj;
+            } ?>" required>
           </div>
           <div class="submit-button d-flex justify-content-center">
             <button class="btn btn-primary calculate" name="submit">Hesapla</button>
           </div>
           <div class="result d-flex justify-content-center">
-            <?php include 'calculate.php'; ?>
+            <?php if (isset($_POST['submit'])) {
+              echo "Çalışma Süresi : " . "<br>";
+              echo "$saat Saat $dakika Dakika";
+            } ?>
           </div>
         </form>
       </div> 

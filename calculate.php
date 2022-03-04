@@ -14,8 +14,7 @@
       $exp = explode( "." , $conv);
       $saat = $exp['0'];
       $dakika = $exp['1'];
-      echo "Çalışma Süresi : " . "<br>";
-      echo "$saat Saat $dakika Dakika";
+      
     }
 
     ?>
