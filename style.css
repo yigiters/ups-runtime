@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); /* font-family: 'Ubuntu', sans-serif; */
+
+body {
+	background: url(bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.head {
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: black;
+	color: white;
+	height: 100px;
+	transition: 0.8s;
+	opacity: 80%;
+}
+
+.head:hover {
+	background-color: white;
+	color: black;
+	transition: 0.8s;
+}
+
+.frame {
+	width: 60%;
+	height: 700px;
+	background-color: #404146;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.frame {
+		width: 90%;
+		height: 600px;
+	}
+}
+
+.lbl {
+	color: white;
+	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+	.lbl {
+		font-size: 15px;
+	}
+}
+
+#text-box {
+	margin: auto;
+	width: 60%;
+	height: 35px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	#text-box {
+		width: 90%;
+	}
+}
+
+.submit-button {
+	margin-top: 3%;
+}
+
+.calculate {
+	width: 200px;
+	height: 50px;
+	font-size: 25px;
+}
+
+.result {
+	margin-top: 2%;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.footer {
+	height: 150px;
+	background-color: black;
+	opacity: 80%;
+}
+
+.footer p {
+	color: white;
+	font-weight: bold;
+}
