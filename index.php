@@ -33,13 +33,13 @@
             } ?>" required>
           </div>
           <div class="row">
-            <span class="lbl">Batarya Kapasitesi (Ah)</span>
+            <span class="lbl">Akü Kapasitesi (Ah)</span>
             <input type="text" id="text-box" name="kapasite" value="<?php if (isset($_POST['submit'])) {
               echo $kapasite;
             } ?>" required>
           </div>
           <div class="row">
-            <span class="lbl">Dizi Batarya Sayısı</span>
+            <span class="lbl">Dizi Akü Sayısı</span>
             <input type="text" id="text-box" name="sayi" value="<?php if (isset($_POST['submit'])) {
               echo $sayi;
             } ?>" required>
@@ -51,7 +51,7 @@
             } ?>" required>
           </div>
           <div class="row">
-            <span class="lbl">Batarya Voltajı (V)</span>
+            <span class="lbl">Akü Voltajı (V)</span>
             <input type="text" id="text-box" name="voltaj" value="<?php if (isset($_POST['submit'])) {
               echo $voltaj;
             } ?>" required>
