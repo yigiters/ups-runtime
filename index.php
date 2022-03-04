@@ -39,7 +39,7 @@
             } ?>" required>
           </div>
           <div class="row">
-            <span class="lbl">Batarya Sayısı</span>
+            <span class="lbl">Dizi Batarya Sayısı</span>
             <input type="text" id="text-box" name="sayi" value="<?php if (isset($_POST['submit'])) {
               echo $sayi;
             } ?>" required>
