@@ -19,7 +19,7 @@
    
     <div class="container frame">
       <div class="col-md-12">
-        <form id="my-form" method="post" action="#rslt">
+        <form id="my-form" method="post" action="#result">
           <div class="row">
             <span class="lbl" style="margin-top: 5%;">Toplam Yük (W)</span>
             <input type="text" id="text-box" name="yük" value="<?php if (isset($_POST['submit'])) {
@@ -59,7 +59,7 @@
           <div class="submit-button d-flex justify-content-center">
             <button class="btn btn-primary calculate" name="submit">Hesapla</button>
           </div>
-          <div class="result d-flex justify-content-center" id="rslt">
+          <div class="result d-flex justify-content-center" id="result">
             <?php if (isset($_POST['submit'])) {
               echo "Çalışma Süresi : " . "<br>";
               echo "$saat Saat $dakika Dakika";
