@@ -33,7 +33,7 @@
           </div>
           <div class="row">
             <span class="lbl">Batarya Sayısı</span>
-            <input type="text" id="text-box" name="dizi" required>
+            <input type="text" id="text-box" name="sayi" required>
           </div>
           <div class="row">
             <span class="lbl">Batarya Voltajı (V)</span>
